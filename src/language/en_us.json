@@ -453,6 +453,10 @@
     "cmdHistory": "Command history",
     "noCmdHistory": "No command history",
     "statsHistory": "Instance Stats",
+    "statsCPU": "CPU",
+    "statsMem": "Memory",
+    "statsDisk": "Disk",
+    "statsPlayer": "Players",
     "panelOnline": "Number of online panel user(s)",
     "panelOnlineInfo": "Usage of past 10 hours. Sample interval: 10 minutes.",
     "pingConfig": {

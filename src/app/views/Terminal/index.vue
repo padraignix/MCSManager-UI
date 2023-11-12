@@ -318,34 +318,42 @@
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <Panel>
-              <template #title>{{ $t("instances.statsCPU") }}</template>
-              <template #default>
-                <div>
-                </div>
-              </template>
-            </Panel>
-            <Panel>
-              <template #title>{{ $t("instances.statsMem") }}</template>
-              <template #default>
-                <div>
-                </div>
-              </template>
-            </Panel>
-            <Panel>
-              <template #title>{{ $t("instances.statsDisk") }}</template>
-              <template #default>
-                <div>
-                </div>
-              </template>
-            </Panel>
-            <Panel>
-              <template #title>{{ $t("instances.statsPlayers") }}</template>
-              <template #default>
-                <div>
-                </div>
-              </template>
-            </Panel>
+            <el-col :lg="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #title>{{ $t("instances.statsCPU") }}</template>
+                <template #default>
+                  <div>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
+            <el-col :lg="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #title>{{ $t("instances.statsMem") }}</template>
+                <template #default>
+                  <div>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
+            <el-col :lg="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #title>{{ $t("instances.statsDisk") }}</template>
+                <template #default>
+                  <div>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
+            <el-col :lg="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #title>{{ $t("instances.statsPlayers") }}</template>
+                <template #default>
+                  <div>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
           </template>
         </Panel>
 
