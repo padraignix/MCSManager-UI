@@ -320,7 +320,7 @@
             <!-- Adding in stats panels afterwards if it works -->
             <el-col :md="6">
               <Panel>
-                <template #default>{{ $t("terminal.statsCPU") }}</template>
+                <template #default2>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
