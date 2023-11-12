@@ -331,7 +331,7 @@
                 </template>
               </Panel>
             </div>
-            <el-col :md="4.5" :offset="0" class="row-mb">
+            <div class="col-md-4">
               <Panel>
                 <template #title2>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
@@ -342,8 +342,8 @@
                   </div>
                 </template>
               </Panel>
-            </el-col>
-            <el-col :xs="6" :offset="0" class="row-mb">
+            </div>
+            <div class="col-md-4">
               <Panel>
                 <template #title2>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
@@ -354,8 +354,8 @@
                   </div>
                 </template>
               </Panel>
-            </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
+            </div>
+            <div class="col-md-4">
               <Panel>
                 <template #title2>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
@@ -370,7 +370,7 @@
                   </div>
                 </template>
               </Panel>
-            </el-col>
+            </div>
           </template>
         </Panel>
 
