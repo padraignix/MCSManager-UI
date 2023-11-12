@@ -1,5 +1,6 @@
 <!--
   Copyright (C) 2022 MCSManager <mcsmanager-dev@outlook.com>
+  Copyright (C) 2023 padraignix <padraignix [at] gmail [dot] com>
 -->
 
 <template>
@@ -318,7 +319,7 @@
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <el-col :lg="6" :offset="0" class="row-mb">
+            <el-col :lg="3" :offset="0" class="row-mb">
               <Panel>
                 <template #title>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
@@ -330,7 +331,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
+            <el-col :lg="3" :offset="0" class="row-mb">
               <Panel>
                 <template #title>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
@@ -342,7 +343,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
+            <el-col :lg="3" :offset="0" class="row-mb">
               <Panel>
                 <template #title>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
@@ -354,7 +355,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
+            <el-col :lg="3" :offset="0" class="row-mb">
               <Panel>
                 <template #title>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>

@@ -456,7 +456,7 @@
     "statsCPU": "CPU",
     "statsMem": "Memory",
     "statsDisk": "Disk",
-    "statsPlayer": "Players",
+    "statsPlayers": "Players",
     "panelOnline": "Number of online panel user(s)",
     "panelOnlineInfo": "Usage of past 10 hours. Sample interval: 10 minutes.",
     "pingConfig": {
