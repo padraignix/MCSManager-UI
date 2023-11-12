@@ -313,13 +313,13 @@
           </template>
         </Panel>
       </el-col>
+      
       <el-col :md="18">
-
         <Panel v-if="!isGlobalTerminal">
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <el-col :lg="6" :offset="0" class="row-mb">
+            <el-col width=25% :offset="0" class="row-mb">
               <Panel>
                 <template #title>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
@@ -360,7 +360,7 @@
                 <template #title>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
                   <div>
-                    <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
+                    <LineInfo v-if="instanceInfo.info">
                     {{ instanceInfo.info.currentPlayers }} /
                     {{ instanceInfo.info.maxPlayers }}
                   </LineInfo>
