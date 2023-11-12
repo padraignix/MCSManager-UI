@@ -14,6 +14,9 @@
       <div class="box-card-rtitle" v-if="$slots.rtitle">
         <slot name="rtitle"></slot>
       </div>
+      <div class="box-card-rtitle" v-if="$slots.title2">
+        <slot name="title2"></slot>
+      </div>
     </div>
 
     <div class="box-card-content">
@@ -63,7 +66,10 @@ export default {
 .box-card-rtitle {
   /* float: right; */
 }
-
+.box-card-title2 {
+  font-weight: 600;
+  font-size: 18px;
+}
 .box-card-content {
   font-size: 13px;
   font-weight: 400;

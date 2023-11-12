@@ -319,9 +319,9 @@
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <el-col width=25% :offset="0" class="row-mb">
+            <div class="col-md-4">
               <Panel>
-                <template #rtitle>{{ $t("terminal.statsCPU") }}</template>
+                <template #title2><i class="el-icon-cpu"></i> {{ $t("terminal.statsCPU") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
@@ -330,10 +330,10 @@
                   </div>
                 </template>
               </Panel>
-            </el-col>
-            <el-col :md="6" :offset="0" class="row-mb">
+            </div>
+            <el-col :md="4.5" :offset="0" class="row-mb">
               <Panel>
-                <template #rtitle>{{ $t("terminal.statsMem") }}</template>
+                <template #title2>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
@@ -345,7 +345,7 @@
             </el-col>
             <el-col :xs="6" :offset="0" class="row-mb">
               <Panel>
-                <template #rtitle>{{ $t("terminal.statsDisk") }}</template>
+                <template #title2>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
@@ -357,7 +357,7 @@
             </el-col>
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #rtitle>{{ $t("terminal.statsPlayers") }}</template>
+                <template #title2>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
