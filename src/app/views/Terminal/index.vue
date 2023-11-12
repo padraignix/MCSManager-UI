@@ -321,7 +321,31 @@
             <!-- Adding in stats panels afterwards if it works -->
             <el-col width=25% :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("terminal.statsCPU") }}</template>
+                <template #rtitle>{{ $t("terminal.statsCPU") }}</template>
+                <template #default>
+                  <div>
+                    <LineInfo v-if="instanceInfo.info">
+                      "Test"
+                    </LineInfo>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
+            <el-col :md="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #rtitle>{{ $t("terminal.statsMem") }}</template>
+                <template #default>
+                  <div>
+                    <LineInfo v-if="instanceInfo.info">
+                      "Test"
+                    </LineInfo>
+                  </div>
+                </template>
+              </Panel>
+            </el-col>
+            <el-col :xs="6" :offset="0" class="row-mb">
+              <Panel>
+                <template #rtitle>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
@@ -333,37 +357,16 @@
             </el-col>
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("terminal.statsMem") }}</template>
+                <template #rtitle>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
                   <div>
-                    <LineInfo v-if="instanceInfo.info">
-                      "Test"
-                    </LineInfo>
-                  </div>
-                </template>
-              </Panel>
-            </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
-              <Panel>
-                <template #title>{{ $t("terminal.statsDisk") }}</template>
-                <template #default>
-                  <div>
-                    <LineInfo v-if="instanceInfo.info">
-                      "Test"
-                    </LineInfo>
-                  </div>
-                </template>
-              </Panel>
-            </el-col>
-            <el-col :lg="6" :offset="0" class="row-mb">
-              <Panel>
-                <template #title>{{ $t("terminal.statsPlayers") }}</template>
-                <template #default>
-                  <div>
-                    <LineInfo v-if="instanceInfo.info">
+                    <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
                     {{ instanceInfo.info.currentPlayers }} /
                     {{ instanceInfo.info.maxPlayers }}
-                  </LineInfo>
+                    </LineInfo>
+                    <LineInfo v-else>
+                    0 / 0
+                    </LineInfo>
                   </div>
                 </template>
               </Panel>
