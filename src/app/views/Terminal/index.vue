@@ -319,7 +319,7 @@
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <el-col :lg="3" :offset="0" class="row-mb">
+            <el-col :xs="12" :md="6" :offset="0">
               <Panel>
                 <template #title>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
@@ -331,7 +331,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="3" :offset="0" class="row-mb">
+            <el-col :xs="12" :md="6" :offset="0">
               <Panel>
                 <template #title>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
@@ -343,7 +343,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="3" :offset="0" class="row-mb">
+            <el-col :xs="12" :md="6" :offset="0">
               <Panel>
                 <template #title>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
@@ -355,7 +355,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :lg="3" :offset="0" class="row-mb">
+            <el-col :xs="12" :md="6" :offset="0">
               <Panel>
                 <template #title>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
