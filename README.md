@@ -6,10 +6,11 @@
 [![Status](https://img.shields.io/badge/node-v14.17.6-blue.svg)](https://nodejs.org/en/download/)
 [![Status](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://github.com/MCSManager)
 
+Original Code Locations:
 [Official Website](http://mcsmanager.com/) | [Team Homepage](https://github.com/MCSManager) | [Panel Project](https://github.com/MCSManager/MCSManager) | [UI Project](https://github.com/MCSManager/UI) | [Daemon project](https://github.com/MCSManager/Daemon)
 
 
-Please go to main project repository: [https://github.com/MCSManager/MCSManager](https://github.com/MCSManager/MCSManager)
+Custom Modifications for Quantumly Confused Gaming: [https://github.com/padraignix/MCSManager-UI](https://github.com/padraignix/MCSManager-UI)
 
 <br />
 
@@ -38,6 +39,8 @@ If you find a serious security vulnerability and it is inconvenient to publish i
 
 ## License
 
+Original Code:
 Copyright 2022 [MCSManager Dev](https://github.com/mcsmanager), Apache-2.0 license.
 
-
+Modified/New Code:
+Copyright 2023 [padraignix](https://github.com/padraignix), Apache-2.0 license.
