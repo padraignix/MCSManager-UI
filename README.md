@@ -3,7 +3,7 @@
 <br />
 
 [![Status](https://img.shields.io/badge/npm-v6.14.15-blue.svg)](https://www.npmjs.com/)
-[![Status](https://img.shields.io/badge/node-v14.17.6-blue.svg)](https://nodejs.org/en/download/)
+[![Status](https://img.shields.io/badge/node-v14.19.1-blue.svg)](https://nodejs.org/en/download/)
 [![Status](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://github.com/MCSManager)
 
 Original Code Locations:
@@ -17,10 +17,20 @@ Custom Modifications for Quantumly Confused Gaming: [https://github.com/padraign
 ## Build the development environment
 
 ```bash
-git clone https://github.com/MCSManager/UI.git
+git clone https://github.com/padraignix/MCSManager-UI.git
 cd UI
 npm install
 npm run serve
+# Visit http://localhost:8080/
+````
+
+For previously existing installation where original installer was used:
+
+```bash
+git clone https://github.com/padraignix/MCSManager-UI.git
+cd UI
+/opt/node-v14.19.1-linux-x64/bin/node /opt/node-v14.19.1-linux-x64/bin/npm install
+/opt/node-v14.19.1-linux-x64/bin/node /opt/node-v14.19.1-linux-x64/bin/npm run serve
 # Visit http://localhost:8080/
 ````
 
@@ -32,7 +42,7 @@ npm run serve
 
 Feedback on any problems found is welcome and must be fixed in time.
 
-If you find a serious security vulnerability and it is inconvenient to publish it publicly, please send an email to: mcsmanager-dev@outlook.com. After the security issue is fixed, the name of the vulnerability discoverer will be added to the code.
+If you find a serious security vulnerability and it is inconvenient to publish it publicly, please send an email to: padraignix [at] gmail [dot] com. After the security issue is fixed, the name of the vulnerability discoverer will be added to the code.
 
 <br />
 
