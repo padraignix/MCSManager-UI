@@ -320,36 +320,49 @@
             <!-- Adding in stats panels afterwards if it works -->
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("instances.statsCPU") }}</template>
+                <template #title>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
                   <div>
+                    <LineInfo v-if="instanceInfo.info">
+                      "Test"
+                    </LineInfo>
                   </div>
                 </template>
               </Panel>
             </el-col>
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("instances.statsMem") }}</template>
+                <template #title>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
                   <div>
+                    <LineInfo v-if="instanceInfo.info">
+                      "Test"
+                    </LineInfo>
                   </div>
                 </template>
               </Panel>
             </el-col>
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("instances.statsDisk") }}</template>
+                <template #title>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
                   <div>
+                    <LineInfo v-if="instanceInfo.info">
+                      "Test"
+                    </LineInfo>
                   </div>
                 </template>
               </Panel>
             </el-col>
             <el-col :lg="6" :offset="0" class="row-mb">
               <Panel>
-                <template #title>{{ $t("instances.statsPlayers") }}</template>
+                <template #title>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
                   <div>
+                    <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
+                    {{ instanceInfo.info.currentPlayers }} /
+                    {{ instanceInfo.info.maxPlayers }}
+                  </LineInfo>
                   </div>
                 </template>
               </Panel>
