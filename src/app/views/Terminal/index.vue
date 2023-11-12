@@ -313,6 +313,42 @@
         </Panel>
       </el-col>
       <el-col :md="isGlobalTerminal ? 24 : 18">
+
+        <Panel v-if="!isGlobalTerminal">
+          <template #title>{{ $t("terminal.statsHistory") }}</template>
+          <template #default>
+            <!-- Adding in stats panels afterwards if it works -->
+            <Panel>
+              <template #title>{{ $t("instances.statsCPU") }}</template>
+              <template #default>
+                <div>
+                </div>
+              </template>
+            </Panel>
+            <Panel>
+              <template #title>{{ $t("instances.statsMem") }}</template>
+              <template #default>
+                <div>
+                </div>
+              </template>
+            </Panel>
+            <Panel>
+              <template #title>{{ $t("instances.statsDisk") }}</template>
+              <template #default>
+                <div>
+                </div>
+              </template>
+            </Panel>
+            <Panel>
+              <template #title>{{ $t("instances.statsPlayers") }}</template>
+              <template #default>
+                <div>
+                </div>
+              </template>
+            </Panel>
+          </template>
+        </Panel>
+
         <Panel v-loading="!available" :class="{ 'global-terminal-wrapper': isGlobalTerminal }">
           <template #title>
             <span v-if="!isGlobalTerminal">{{ $t("router.terminal") }}</span>
@@ -427,13 +463,6 @@
                 v-if="isGlobalTerminal"
               >{{ $t("terminal.globalTerminalTip") }}</div>
             </div>
-          </template>
-        </Panel>
-
-        <Panel v-if="!isGlobalTerminal">
-          <template #title>{{ $t("terminal.statsHistory") }}</template>
-          <template #default>
-          <!-- Adding in stats panels afterwards if it works -->
           </template>
         </Panel>
 
