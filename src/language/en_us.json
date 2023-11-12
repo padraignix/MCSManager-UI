@@ -452,6 +452,7 @@
     "inputCmd": "Enter command here, press ENTER to execute",
     "cmdHistory": "Command history",
     "noCmdHistory": "No command history",
+    "statsHistory": "Instance Stats",
     "panelOnline": "Number of online panel user(s)",
     "panelOnlineInfo": "Usage of past 10 hours. Sample interval: 10 minutes.",
     "pingConfig": {
@@ -2175,7 +2176,7 @@
     "attention": "Attention",
     "attentionInfo": "Professional knowledge may be needed for these settings. You can set those value accordingly based on your hardware.<br />the default value will be good for most purposes. However, for a seamless user experience under large-scale deployment, you may need better hardware or higher default values.",
     "about": "About",
-    "aboutTitle": "Copyright MCSManager, <a target='black' href='https://github.com/MCSManager/MCSManager-Daemon/blob/master/LICENSE'>Apache-2.0</a> License",
+    "aboutTitle": "Copyright padraignix, <a target='black' href='https://github.com/padraignix/MCSManager-UI/blob/master/LICENSE'>Apache-2.0</a> License",
     "aboutTitleInfo": "This protocol allows everyone to copy and modify copies of the code and can charge user fees for services.<br />",
     "learnMore": "Learn More",
     "userAgreement": "EULA",

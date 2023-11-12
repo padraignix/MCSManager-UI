@@ -431,6 +431,13 @@
         </Panel>
 
         <Panel v-if="!isGlobalTerminal">
+          <template #title>{{ $t("terminal.statsHistory") }}</template>
+          <template #default>
+          <!-- Adding in stats panels afterwards if it works -->
+          </template>
+        </Panel>
+
+        <Panel v-if="!isGlobalTerminal">
           <template #title>{{ $t("terminal.cmdHistory") }}</template>
           <template #rtitle>
             <span class="terminal-right-botton" @click="deleteCommandHistory">
