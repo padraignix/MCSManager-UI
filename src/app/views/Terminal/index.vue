@@ -313,15 +313,14 @@
           </template>
         </Panel>
       </el-col>
-      <el-col :md="isGlobalTerminal ? 24 : 18">
-
-        <Panel v-if="!isGlobalTerminal">
+      <el-col :md="24" v-if="!isGlobalTerminal">
+        <Panel>
           <template #title>{{ $t("terminal.statsHistory") }}</template>
           <template #default>
             <!-- Adding in stats panels afterwards if it works -->
-            <el-col :xs="12" :md="6" :offset="0">
+            <el-col :md="6">
               <Panel>
-                <template #title>{{ $t("terminal.statsCPU") }}</template>
+                <template #default>{{ $t("terminal.statsCPU") }}</template>
                 <template #default>
                   <div>
                     <LineInfo v-if="instanceInfo.info">
@@ -331,7 +330,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :xs="12" :md="6" :offset="0">
+            <el-col :md="6">
               <Panel>
                 <template #title>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
@@ -343,7 +342,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :xs="12" :md="6" :offset="0">
+            <el-col :md="6">
               <Panel>
                 <template #title>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
@@ -355,7 +354,7 @@
                 </template>
               </Panel>
             </el-col>
-            <el-col :xs="12" :md="6" :offset="0">
+            <el-col :md="6">
               <Panel>
                 <template #title>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>

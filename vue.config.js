@@ -1,8 +1,9 @@
 /*
  * @Author: Copyright(c) 2020 Suwings
+ * @Author: Copyright(c) 2023 padraignix
  * @Date: 2021-05-08 21:46:34
- * @LastEditTime: 2021-08-30 10:43:11
- * @Description:
+ * @LastEditTime: 2023-11-12 17:43:11
+ * @Description: Updated version for QC Gaming
  */
 // vue.config.js
 
@@ -17,7 +18,7 @@ module.exports = {
       entry: "src/app/index.js",
       template: "public/index.html",
       filename: "index.html",
-      title: "MCSManager"
+      title: "Quantumly Confused Gaming"
     }
   },
   devServer: {
