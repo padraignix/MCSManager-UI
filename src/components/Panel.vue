@@ -19,6 +19,10 @@
       </div>
     </div>
 
+    <div class="box-card-group" v-if="$slots.box2">
+      <slot></slot>
+    </div>
+
     <div class="box-card-content">
       <slot></slot>
     </div>
@@ -73,6 +77,10 @@ export default {
 .box-card-content {
   font-size: 13px;
   font-weight: 400;
+}
+
+.box-card-group div{
+  width: 25%
 }
 
 .box-card-shadow {
