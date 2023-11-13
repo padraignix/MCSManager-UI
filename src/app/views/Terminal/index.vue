@@ -315,8 +315,19 @@
       </el-col>
       
       <el-col :md="18">
+        <ValueCard
+                  :title="$t('overview.daemonStatus')"
+                  :sub-title="$t('overview.daemonAvailable')"
+                  :value="`${valueCard.availableDaemon}/${valueCard.totalDaemon}`"
+                  style="height: 260px"
+                  font-class="el-icon-s-data"
+                  v-loading="loading"
+                >
+        </ValueCard>
+        <!--
         <Panel v-if="!isGlobalTerminal">
           <template #title>{{ $t("terminal.statsHistory") }}</template>
+          
           <div>
             <el-row :gutter="20">
               <el-col :md="6" :xs="12" :offset="0">
@@ -366,9 +377,9 @@
             </el-row>
           </div>
           
-          <!--
+          --><!--
           <div style="float:left;width:100%">
-            <div style="display:inline-block;width:25%">
+            <div style="display:inline-block;width:25%;padding: 0 10px 0 10px;">
               <Panel>
                 <template #title2><i class="el-icon-cpu"></i> {{ $t("terminal.statsCPU") }}</template>
                 <template #default>
@@ -421,9 +432,9 @@
               </Panel>
             </div>
           </div>
-          -->
+        
         </Panel>
-
+        -->
         <Panel v-loading="!available" :class="{ 'global-terminal-wrapper': isGlobalTerminal }">
           <template #title>
             <span v-if="!isGlobalTerminal">{{ $t("router.terminal") }}</span>
