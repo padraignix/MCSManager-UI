@@ -317,7 +317,7 @@
       <el-col :md="18">
         <Panel v-if="!isGlobalTerminal">
           <template #title>{{ $t("terminal.statsHistory") }}</template>
-          <template #box>
+          <div style="float:left;width:100%">
             <!-- Adding in stats panels afterwards if it works -->
             <div style="width:25%">
               <Panel>
@@ -371,7 +371,7 @@
                 </template>
               </Panel>
             </div>
-          </template>
+          </div>
         </Panel>
 
         <Panel v-loading="!available" :class="{ 'global-terminal-wrapper': isGlobalTerminal }">
