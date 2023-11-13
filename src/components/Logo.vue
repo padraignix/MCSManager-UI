@@ -5,7 +5,7 @@
 <template>
   <div>
     <div class="logo-wrapper" :style="{ margin }">
-      <img class="logo-img" :src="require('../assets/logo-src.png')" width="172" />
+      <img class="logo-img" :src="require('../assets/logo-src.png')" width="220" />
     </div>
   </div>
 </template>
