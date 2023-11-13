@@ -317,9 +317,9 @@
       <el-col :md="18">
         <Panel v-if="!isGlobalTerminal">
           <template #title>{{ $t("terminal.statsHistory") }}</template>
-          <template #box2>
+          <template #box>
             <!-- Adding in stats panels afterwards if it works -->
-            <div>
+            <template #box2>
               <Panel>
                 <template #title2><i class="el-icon-cpu"></i> {{ $t("terminal.statsCPU") }}</template>
                 <template #default>
@@ -330,8 +330,8 @@
                   </div>
                 </template>
               </Panel>
-            </div>
-            <div>
+            </template>
+            <template #box2>
               <Panel>
                 <template #title2>{{ $t("terminal.statsMem") }}</template>
                 <template #default>
@@ -342,8 +342,8 @@
                   </div>
                 </template>
               </Panel>
-            </div>
-            <div>
+            </template>
+            <template #box2>
               <Panel>
                 <template #title2>{{ $t("terminal.statsDisk") }}</template>
                 <template #default>
@@ -354,8 +354,8 @@
                   </div>
                 </template>
               </Panel>
-            </div>
-            <div>
+            </template>
+            <template #box2>
               <Panel>
                 <template #title2>{{ $t("terminal.statsPlayers") }}</template>
                 <template #default>
@@ -370,7 +370,7 @@
                   </div>
                 </template>
               </Panel>
-            </div>
+            </template>
           </template>
         </Panel>
 

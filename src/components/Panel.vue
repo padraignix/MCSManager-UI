@@ -19,7 +19,11 @@
       </div>
     </div>
 
-    <div class="box-card-group" v-if="$slots.box2">
+    <div class="box-card-group" v-if="$slots.box">
+      <slot></slot>
+    </div>
+
+    <div class="box-card-group2" v-if="$slots.box2">
       <slot></slot>
     </div>
 
@@ -79,7 +83,12 @@ export default {
   font-weight: 400;
 }
 
-.box-card-group div{
+.box-card-group {
+  float: left;
+  width: 100%;
+}
+
+.box-card-group2 {
   width: 25%
 }
 
