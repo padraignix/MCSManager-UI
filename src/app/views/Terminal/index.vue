@@ -315,10 +315,57 @@
       </el-col>
       
       <el-col :md="18">
-        <Panel v-if="!isGlobalTerminal">
-          <template #title>{{ $t("terminal.statsHistory") }}</template>
+          <div>
+            <el-row :gutter="20">
+              <el-col :md="6" :xs="12" :offset="0">
+                <ValueCard
+                  :title="$t('overview.daemonStatus')"
+                  :sub-title="$t('overview.daemonAvailable')"
+                  :value="`${valueCard.availableDaemon}/${valueCard.totalDaemon}`"
+                  style="height: 260px"
+                  font-class="el-icon-s-data"
+                  v-loading="loading"
+                >
+                </ValueCard>
+              </el-col>
+              <el-col :md="6" :xs="12" :offset="0">
+                <ValueCard
+                  :title="$t('overview.instanceStatus')"
+                  :sub-title="$t('overview.runningAndTotalInstance')"
+                  :value="`${valueCard.runningInstance}/${valueCard.totalInstance}`"
+                  style="height: 260px"
+                  font-class="el-icon-s-promotion"
+                  v-loading="loading"
+                >
+                </ValueCard>
+              </el-col>
+              <el-col :md="6" :xs="12" :offset="0">
+                <ValueCard
+                  :title="$t('overview.userLogin')"
+                  :sub-title="$t('overview.failedLogin')"
+                  :value="`${valueCard.failedLogin}:${valueCard.Logined}`"
+                  style="height: 260px"
+                  font-class="el-icon-upload"
+                  v-loading="loading"
+                >
+                </ValueCard>
+              </el-col>
+              <el-col :md="6" :xs="12" :offset="0">
+                <ValueCard
+                  :title="$t('overview.systemLoad')"
+                  :sub-title="$t('overview.systemLoadPercentage')"
+                  :value="`${valueCard.cpu}% ${valueCard.mem}%`"
+                  style="height: 260px"
+                  font-class="el-icon-s-flag"
+                  v-loading="loading"
+                >
+                </ValueCard>
+              </el-col>
+            </el-row>
+          </div>
+          
+          <!--
           <div style="float:left;width:100%">
-            <!-- Adding in stats panels afterwards if it works -->
             <div style="display:inline-block;width:25%">
               <Panel>
                 <template #title2><i class="el-icon-cpu"></i> {{ $t("terminal.statsCPU") }}</template>
@@ -372,7 +419,7 @@
               </Panel>
             </div>
           </div>
-        </Panel>
+          -->
 
         <Panel v-loading="!available" :class="{ 'global-terminal-wrapper': isGlobalTerminal }">
           <template #title>
